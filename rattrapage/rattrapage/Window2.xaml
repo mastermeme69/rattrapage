@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="800">
     <Grid>
-        <Label x:Name="questionLabel" Content="Question" HorizontalAlignment="Left" Margin="272,91,0,0" VerticalAlignment="Top" Height="24" Width="223"/>
+                <Label x:Name="questionLabel" Content="Question" HorizontalAlignment="Center" Margin="0,84,0,0" VerticalAlignment="Top" Height="64" Width="421"/>
         <Label x:Name="NomLabel" Content="Nom" HorizontalAlignment="Left" Margin="93,36,0,0" VerticalAlignment="Top" Height="24" Width="223"/>
         <Label x:Name="ScoreLabel" Content="Score" HorizontalAlignment="Left" Margin="532,30,0,0" VerticalAlignment="Top" Height="24" Width="223"/>
         <Label Content="Pari" HorizontalAlignment="Left" Margin="131,277,0,0" VerticalAlignment="Top"/>
