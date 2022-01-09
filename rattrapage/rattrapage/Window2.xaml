@@ -1,0 +1,20 @@
+﻿<Window x:Class="rattrapage.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:rattrapage"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="questionLabel" Content="Question" HorizontalAlignment="Left" Margin="272,91,0,0" VerticalAlignment="Top" Height="24" Width="223"/>
+        <Label x:Name="NomLabel" Content="Nom" HorizontalAlignment="Left" Margin="93,36,0,0" VerticalAlignment="Top" Height="24" Width="223"/>
+        <Label x:Name="ScoreLabel" Content="Score" HorizontalAlignment="Left" Margin="532,30,0,0" VerticalAlignment="Top" Height="24" Width="223"/>
+        <Label Content="Pari" HorizontalAlignment="Left" Margin="131,277,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ValeurPari" HorizontalAlignment="Left" Margin="242,281,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Envoyer Vote" HorizontalAlignment="Left" Margin="552,342,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
+        <RadioButton x:Name="Non" Content="Non" HorizontalAlignment="Left" Margin="400,179,0,0" VerticalAlignment="Top"  GroupName="Reponse"/>
+        <RadioButton  x:Name="Oui" Content="Oui" HorizontalAlignment="Left" Margin="204,172,0,0" VerticalAlignment="Top"  GroupName="Reponse" IsChecked="True"/>
+
+    </Grid>
+</Window>
