@@ -26,9 +26,15 @@ namespace rattrapage
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-            joueur.setInfosJoueurs(textBox1.Text,textBox2.Text);
-            this.Close();
+            try
+            {
+                joueur.setInfosJoueurs(textBox1.Text, textBox2.Text);
+                this.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Veuillez remplir tous les champs");
+            }
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

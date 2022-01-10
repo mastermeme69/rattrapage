@@ -10,8 +10,6 @@ namespace parties
     {
        static int NombreJoueurs;
        static int NombreTours;
-        static int NombreJoueursOk;
-       int[,] ListePointsEnCours = new int[NombreJoueurs, 2];
       public List<Joueur> ListeJoueurs = new List<Joueur>();
        public Tour tour;
         
@@ -38,18 +36,7 @@ namespace parties
               tour= new Tour(1, this, ListeJoueurs);
             }
         }
-        public static int getNombreJoueursOk()
-        {
-            return NombreJoueursOk;
-        }
-        public List<Joueur> getListeJoueurs()
-        {
-            return ListeJoueurs;
-        }
-        public void ReponsesJoueurs()
-        {
 
-        }
 
         public void TermineTour(int tourIdx)
         {
@@ -60,12 +47,13 @@ namespace parties
                 {
                     return x.score = y.score;
                 });
-                ListeJoueurs.Reverse();
+              //  ListeJoueurs.Reverse();
                 string msg = "Joueur gagnant: " + ListeJoueurs[0].Prénom + " " + ListeJoueurs[0].Nom + "!";
                 string caption = "Fin de Partie";
 ///                MessageBoxButtons buttons = MessageBoxButtons.Ok;
                 var res = MessageBox.Show(msg, caption);
-   //             System.Windows.Forms.Application.Exit();
+                //             System.Windows.Forms.Application.Exit();
+                Application.Current.Shutdown();
             } else
 
             {

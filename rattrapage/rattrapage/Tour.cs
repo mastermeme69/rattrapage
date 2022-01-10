@@ -10,7 +10,6 @@ namespace Tours
     {
         List<(Joueur, int, bool)> InfoTour= new List<(Joueur, int, bool)> { };
         static  DBQuestion DB = new DBQuestion();
-        string QuestionTour;
         int NombreJoueur;
         Partie partie;
         int tourIdx;

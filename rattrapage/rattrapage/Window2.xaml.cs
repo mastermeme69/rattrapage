@@ -28,11 +28,18 @@ namespace rattrapage
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
-        {  int pari= Int32.Parse(ValeurPari.Text);
+        {
+            try
+            {
+                int pari = Int32.Parse(ValeurPari.Text);
 
-            bool reponse = Oui.IsChecked ?? true;
-            joueur_.EnvoyerVote(pari,reponse);
-            
+                bool reponse = Oui.IsChecked ?? true;
+                joueur_.EnvoyerVote(pari, reponse);
+            }
+            catch
+            {
+                 MessageBox.Show("Veuillez remplir tous les champs");
+            }
         }
 
         public void MetAJourScore(int score)
